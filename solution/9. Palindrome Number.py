@@ -9,16 +9,21 @@
 class Solution:
     def isPalindrome(self, x: int) -> bool:
         if x > 0:
-            v = 0
-            num = x
-            while x != 0:
-                v = v * 10 + x % 10
-                x = x // 10
-            if v == num:
+            r = 0
+            y = str(x)
+            n = len(y)
+            d = []
+            for i in (y):
+                d.append(i)
+            for j in range(n):
+                c = d.pop()
+                r = r + c
+                v = int(r)
+            if v == x:
                 return v
             else:
                 return 0
-        elif x == 0:
+        elif x== 0:
             return True
         else:
             return 0
