@@ -4,7 +4,7 @@
 # @Email   : 1027699719@qq.com
 # @Link    : https://github.com/SmartCat0929
 # @Site    : 
-# @File    : 12. Integer to Roman(simplify）.py
+# @File    : 12. Integer to Roman(自己想的复杂的算法）.py
 
 class Solution:
     def intToRoman(self, num: int) -> str:
@@ -160,7 +160,7 @@ class Solution:
                     hundreds = hundreds + "C"
             elif int(numStr[-3]) == 9:
                 hundreds = "CM"
-            if int(numStr[-4]) > 0 and int(numStr[-4]) < 4:
+            if int(numStr[-4]) > 0 and int(numStr[-4]) < 4: #千位
                 thousands = ""
                 for j in range(0, int(numStr[-4])):
                     thousands = "M" + thousands
