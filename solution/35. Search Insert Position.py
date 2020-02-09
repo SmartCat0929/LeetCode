@@ -19,4 +19,6 @@ class Solution:
                         return nums.index(target)
             else:
                 return lens
-print(Solution().searchInsert([1,4,5,6,9],10))
+
+
+print(Solution().searchInsert([1, 4, 5, 6, 11, 11], 10))
